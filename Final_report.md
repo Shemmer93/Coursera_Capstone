@@ -1,4 +1,4 @@
-# Battle of the Cities
+# Mystery City Recommender
 
 *Author: Sebastiaan Hemmer*
 
