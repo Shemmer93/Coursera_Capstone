@@ -22,11 +22,10 @@ As mentioned in the previous section, we will be leveraging the Foursquare API a
 ### 2.1 Data sources
 *Demographical data*
 
-This will be our starting dataset, we will select the top 1000 largest US cities by population. We will use the available dataset on ODS, which will provide us information about the:
+This will be our starting dataset, we will select the top 1000 largest US cities by population. We will use the available dataset on ODS ([source](https://public.opendatasoft.com/explore/embed/dataset/1000-largest-us-cities-by-population-with-geographic-coordinates/table/?sort=-rank)), which will provide us information about the:
 -	Name of city
 -	Population
 -	Coordinates
-(source: [https://public.opendatasoft.com/explore/embed/dataset/1000-largest-us-cities-by-population-with-geographic-coordinates/table/?sort=-rank])
 
 *Geographical data*
 
