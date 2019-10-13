@@ -16,19 +16,22 @@ Because we will be using unlabelled data and do not have access to a training/te
 As mentioned in the previous section, we will be leveraging the Foursquare API and combining it with both geographical and demographic data that are publicly available. In order to determine an accurate client profile, we will need enough features to make distinctions between different cities but not too many as that will overfit and overcomplicate our model. Therefore, we have selected the following data per city:
 
 *Demographical data*
+
 This will be our starting dataset, we will select the top 1000 largest US cities by population. We will use the available dataset on ODS, which will provide us information about the:
 -	Name of city
 -	Population
 -	Coordinates
- (source: [https://public.opendatasoft.com/explore/embed/dataset/1000-largest-us-cities-by-population-with-geographic-coordinates/table/?sort=-rank])
+(source: [https://public.opendatasoft.com/explore/embed/dataset/1000-largest-us-cities-by-population-with-geographic-coordinates/table/?sort=-rank])
 
 *Geographical data*
+
 We will then combine our city demographical data with geographical data from open NOAA datasets, such as:
 -	Elevation
 -	Average annual temperature
 -	Average annual precipitation
 
 *Foursquare API*
+
 Lastly, we will include the Foursquare API to include venue data. We have selected the following features of importance:
 -	Top 5 most popular venue categories (in 5km radius from center)
 -	Amount of venues in a 5km radius from the center
