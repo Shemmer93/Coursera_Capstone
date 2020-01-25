@@ -11,7 +11,7 @@ My imaginary traveling agency ‘*Sacramentum*’ has a unique value proposition
 Our clients purchase tickets and are only provided information regarding the climate of a destination so they know what clothes they should pack. At the airport, our clients are given an envelope which contains the tickets to their destination. Their destination is drawn completely random at this moment.
 
 ### 1.1 Problem definition
-Recently, we have been dealing with many customers that were unsatisfied with the mystery location they have traveled to. Because this is impacting our business, we are looking for solutions to improve our customer satisfaction. Therefore, we have decided to design a recommender system that takes user input of 3-5 cities that they rate positively and then recommends a mystery location that will most likely be rated positively by our client.
+Recently, we have been dealing with an increasing amount of clients that were unsatisfied with the mystery location they have traveled to. Because this is impacting our business, we are looking for solutions to improve our customer satisfaction. Therefore, we have decided to design a recommender system that takes user input of 3-5 cities that they rate positively and then recommends a mystery location that will most likely be rated positively by our client.
 
 To determine the profile of our clients, we will leverage the Foursquare API to cluster different US cities based on certain features. These features shall mainly consist of the number of different types of venues and attractions in a city, as well as geographical and demographic data.
 
