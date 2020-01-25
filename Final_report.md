@@ -10,7 +10,7 @@ My imaginary traveling agency ‘*Sacramentum*’ has a unique value proposition
 Our clients purchase tickets and are only provided information regarding the climate of a destination so they know what clothes they should pack. On the airport, our clients are given an envelope which contains the tickets to their destination. Their destination is drawn completely random at this moment.
 
 ### 1.1 Problem definition
-Recently, we have been dealing with many customers that were unsatisfied with the mystery location they have traveled to. Because this is impacting our business, we are looking for solutions to improve our customer satisfaction. Therefore, we have decided to design a content-based recommender system that takes user input of 3-5 cities that they rate positively and then recommends a mystery location that will most likely be rated positively by our client.
+Recently, we have been dealing with many customers that were unsatisfied with the mystery location they have traveled to. Because this is impacting our business, we are looking for solutions to improve our customer satisfaction. Therefore, we have decided to design a recommender system that takes user input of 3-5 cities that they rate positively and then recommends a mystery location that will most likely be rated positively by our client.
 
 In order to determine a profile of our clients, we will leverage the Foursquare API to cluster different US cities based on certain features. These features shall mainly consist of the amount of different types of venues and attractions in a city, as well as geographical and demographic data.
 
@@ -76,9 +76,10 @@ Several methods are available to quantify the similarity between items, popular 
 This is where the Cosine similarity metric is most useful, as it determines the cosine of the angle between two vectors by using the dot product and dividing over the product of the magnitudes. The main advantage of this metric is that it is excellent in determining the similar angle between two samples. However, it is unable to distinguish the magnitude between two vectors and thus, does not determine the absolute nearest neighbour. For our recommender system, it was decided that angular similarity is valued above absolute distance because we want to avoid making wrong recommendations due to opposing directions of vectors. Therefore, we will accept that we will not necessarily find the closest match. This is actually desirable as it  will help our system recommend cities that will have more or less extreme feature values but with the same general relationship between them. Consequently, the Cosine similarity metric is selected as primary method for our recommender engine.
 
 ## 4. Results
-The resulting
+Based on the determined requirements, a recommender engine was designed that takes a list of any number of cities that a user has enjoyed visiting to in the past as input. The recommender system will process these cities and determine the user-preference vector, which represents the average of the feature values that were input into the system. This vector is then compared to the featureset and the cosine similarity between the user preference and all available cities in our dataset is calculated. The result is an array with similarity scores for every city in our dataset, which is filtered to exclude cities that the user has already traveled to in the past. Finally, the remaining cities are sorted based on their similarity scores and the top 5 cities with highest similarity scores are returned from the recommender engine.
 
 ## 5. Discussion
+
 
 ## 6. Conclusion
 
