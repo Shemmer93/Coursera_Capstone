@@ -13,7 +13,7 @@ Our clients purchase tickets and are only provided information regarding the cli
 ### 1.1 Problem definition
 Recently, we have been dealing with an increasing amount of clients that were unsatisfied with the mystery location they have traveled to. Because this is impacting our business, we are looking for solutions to improve our customer satisfaction. Therefore, we have decided to design a recommender system that takes user input of any number of cities that they rate positively and then recommends a mystery location that will most likely be rated positively by our client.
 
-To determine the profile of our clients, we will leverage the Foursquare API to cluster different US cities based on certain features. These features shall mainly consist of the number of different types of venues and attractions in a city, as well as geographical and demographic data.
+To determine the profile of our clients, we will make use of the Foursquare API to cluster different US cities based on certain features. These features shall mainly consist of the number of different types of venues and attractions in a city, which will be combined with available geographical and demographic open data.
 
 Because we will be using unlabelled data and do not have access to a training/testing dataset, we are limited to using unsupervised learning techniques.
 
